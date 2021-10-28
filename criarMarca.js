@@ -13,4 +13,5 @@ add_marca.onclick = () => {
     let formulario=new FormData(form);
     ajax.send(formulario);
     valor.value = "";
+    lerMarca();
 }

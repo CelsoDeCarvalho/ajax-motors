@@ -1,9 +1,8 @@
 const inner_viaturas = document.getElementById("car-list");
 
-setInterval(()=>{
+const lerViaturas = () =>{ 
     var ajax= new XMLHttpRequest();
     ajax.open("GET","./lerViatura.php",true);
-
     ajax.onload = () => {
         if(ajax.readyState == XMLHttpRequest.DONE){
             if(ajax.status == 200){
@@ -12,6 +11,7 @@ setInterval(()=>{
             }
         }
     };
-
     ajax.send();
-},500);
+}
+
+lerViaturas();
