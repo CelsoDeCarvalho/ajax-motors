@@ -19,29 +19,32 @@
             <form method="post" id="form-viatura" class="mb-5">
                 <div class="form-group">
                     <label for="exampleInputEmail1">Marca</label>
-                    <input type="text" name="marca" id="valor" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <select id="marca-id" name="marca" class="form-control form-control">
+                        
+                    </select>
                 </div>
                 <div class="form-group">
                     <label for="exampleInputEmail1">Modelo</label>
-                    <input type="text" name="modelo" id="valor" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <input type="text" name="modelo" class="form-control"  aria-describedby="emailHelp">
                 </div>
                 <div class="form-group">
                     <label for="exampleInputEmail1">Matricula</label>
-                    <input type="text" name="matricula" id="valor" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <input type="text" name="matricula" class="form-control"  aria-describedby="emailHelp">
                 </div>
-                <button id="add-marca" type="submit" class="btn w-100 btn-primary">+</button>
+                <button id="add-viatura" type="submit" class="btn w-100 btn-primary">+</button>
             </form>
 
             <form method="post" id="form-marca">
                 <div class="form-group">
                     <label for="exampleInputEmail1">Nova marca</label>
-                    <input type="text" name="nomeMarca" id="valor" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <input type="text" name="nomeMarca" id="valor" class="form-control"  aria-describedby="emailHelp">
                 </div>
                 <button id="add-marca" type="submit" class="btn w-100 btn-primary">+</button>
             </form>
         </div>
     </div>
 
+    <script src="./lerMarca.js"></script>
     <script src="./criarMarca.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
