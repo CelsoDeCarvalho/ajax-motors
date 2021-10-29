@@ -1,6 +1,7 @@
 const inner_viaturas = document.getElementById("car-list");
 
 const lerViaturas = () =>{ 
+    console.log('Lendo viatura....');
     var ajax= new XMLHttpRequest();
     ajax.open("GET","./lerViatura.php",true);
     ajax.onload = () => {

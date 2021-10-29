@@ -16,7 +16,8 @@ if ($result->num_rows > 0) {
                   <h5 class="card-title">'.$row['modelo'].'</h5>
                   <span class="card-title">'.$row['marca'].'</span><br/>
                   <span class="card-title">'.$row['matricula'].'</span><br/>
-                  <a href="apagar.php?id='.$row['codigo'].'">Delete</a>
+                  <button type="button" class="btn mt-4 btn-outline-warning btn-sm">editar</button>
+                  <button type="button" onClick="apagar('.$row['codigo'].')" class="btn mt-4 btn-outline-danger btn-sm">apagar</button>
              </div>
           </div>
       </div>

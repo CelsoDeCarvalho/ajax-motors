@@ -2,6 +2,7 @@ const inner_marca = document.getElementById("marca-id");
 
 
 const lerMarca = () =>{
+    console.log('Lendo marcas....');
     var ajax= new XMLHttpRequest();
     ajax.open("GET","./lerMarca.php",true);
     ajax.onload = () => {
